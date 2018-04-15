@@ -7,8 +7,8 @@ public class RoomHolded implements RoomState {
 	
 	public void stateDescription() {
 		System.out.println("ZAREZERWOWANY");
-		System.out.println(holdingPerson.getPersonName() + " " + holdingPerson.getPersonSurname());
-		System.out.println(holdingDate);
+	//	System.out.println(holdingPerson.getPersonName() + " " + holdingPerson.getPersonSurname());
+	//	System.out.println(holdingDate);
 	} 
 
 }
