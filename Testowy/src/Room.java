@@ -1,3 +1,4 @@
+import java.util.Date;
 
 public class Room {
 	
@@ -14,15 +15,16 @@ public class Room {
 		
 	}
 	
-	public void setBooked() {
+	public void setBooked(Person bookingPerson) {
 		
-		this.state = new RoomBooked();	
+		this.state = new RoomBooked(bookingPerson);
+		
 		
 	}
 	
-	public void setHolded() {
+	public void setHolded(Person holdingPerson, Date holdingDate) {
 		
-		this.state = new RoomHolded();	
+		this.state = new RoomHolded(holdingPerson, holdingDate);	
 		
 	}
 	
